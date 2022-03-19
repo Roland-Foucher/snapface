@@ -1,0 +1,14 @@
+.face-snap-card {
+
+  h2 {
+    text-align: center;
+  }
+  border: solid 1px black ;
+  background-color: rgba($color: grey, $alpha: 0.3);
+  img {
+    height: 200px;
+
+    display: block;
+    margin: auto;
+  }
+}
