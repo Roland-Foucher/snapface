@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
         creatinDate: new Date(),
         imgURL:
           'https://tse2.mm.bing.net/th?id=OIP.LXWCLJ9xu7dCkL_53aodqAHaJ4&pid=Api',
-        snaps: 10,
+        snaps: 100,
         location: 'Lyon',
       },
       {
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         creatinDate: new Date(),
         imgURL:
           'https://tse4.mm.bing.net/th?id=OIP.5x-WzZJv-2nYCgYCgj4U2QHaFh&pid=Api',
-        snaps: 14,
+        snaps: 200,
       },
       {
         title: 'title',
