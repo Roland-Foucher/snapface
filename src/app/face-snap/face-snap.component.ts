@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.model';
+import { FaceSnapService } from '../services/face-snaps.service';
 
 @Component({
   selector: 'app-face-snap',
@@ -11,6 +12,8 @@ export class FaceSnapComponent implements OnInit {
 
   snapped!: boolean;
   buttonText!: string;
+
+  constructor(private faceSnapsService: FaceSnapService) {}
 
   ngOnInit(): void {
     this.snapped = false;
@@ -28,10 +31,10 @@ export class FaceSnapComponent implements OnInit {
 
   onSnap() {
     if (this.buttonText === 'Oh Snap!') {
-      this.faceSnap.snaps++;
+      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'snape');
       this.buttonText = 'Oops, unSnap!';
     } else {
-      this.faceSnap.snaps--;
+      this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'unsnap');
       this.buttonText = 'Oh Snap!';
     }
     this.snapped = !this.snapped;

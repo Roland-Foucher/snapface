@@ -1,4 +1,5 @@
 <div class="face-snap-card" [ngClass]="{ snapped: snapped }">
+  <p>{{ 0.467 | percent }}</p>
   <h2>{{ faceSnap.title | titlecase }}</h2>
   <img [src]="faceSnap.imgURL" [alt]="faceSnap.title" />
 
