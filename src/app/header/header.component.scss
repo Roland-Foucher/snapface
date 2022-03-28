@@ -3,3 +3,16 @@ header{
   background-color: rgba(55, 129, 61, 0.5);
   padding: 30px;
 }
+a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  color: #666;
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+.face-snap-card {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px black ;
+  background-color: rgba($color: rgb(55, 112, 129), $alpha: 0.3);
+  width: 400px;
+  h2 {
+    text-align: center;
+  }
+
+  img {
+    height: 200px;
+
+    display: block;
+    margin: auto;
+  }
+}
+
+.snapped{
+  background-color: rgba($color: green, $alpha: 0.3);
+  button {
+    color: green
+  }
+}
