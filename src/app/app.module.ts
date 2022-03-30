@@ -1,6 +1,7 @@
 import { registerLocaleData } from '@angular/common';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 // choisir langue
 import * as fr from '@angular/common/locales/fr';
 
@@ -24,7 +25,13 @@ import { NewFaceSnapComponent } from './new-face-snap/new-face-snap.component';
     SingleFaceSnapComponent,
     NewFaceSnapComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [
     // default application en fr pour date par exemple - changer fr-FR pour autre langues
     { provide: LOCALE_ID, useValue: 'fr-FR' },
